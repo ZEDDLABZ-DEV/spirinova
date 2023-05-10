@@ -36,37 +36,6 @@
         }
       }
 
-      .sidebar-profile {
-        display: flex;
-        background: #f2f3f5;
-        align-items: center;
-        padding: 10px 0px;
-        border-radius: 10px;
-
-        .sidebar-profile-img {
-          flex: 2;
-          display: flex;
-          justify-content: center;
-        }
-
-        .sidebar-profile-text {
-          flex: 4;
-          justify-content: center;
-
-          h2 {
-            font-size: 16px;
-            color: #545c65;
-            padding: 0px;
-            margin: 0px;
-            font-weight: 900;
-          }
-
-          span {
-            font-size: 14px;
-            color: #c3c9cf;
-          }
-        }
-      }
     }
 
     .sidebar-menu {
@@ -108,6 +77,14 @@
             background-color: #0171FE;
             color: #fff !important;
           }
+
+          &:hover span {
+            color: #fff !important;
+          }
+
+          &:hover .icon {
+            color: #fff !important;
+          }
         }
 
         .active {
@@ -117,6 +94,10 @@
             color: #fff;
             font-weight: normal;
           }
+        }
+
+        &:hover {
+          color: #fff !important;
         }
       }
     }

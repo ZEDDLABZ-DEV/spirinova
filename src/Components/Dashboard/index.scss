@@ -1,0 +1,136 @@
+.dashboard {
+  display: flex;
+
+  .main-content-wrapper {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    padding: 20px 40px;
+
+    h1 {
+      font-family: 'Public Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 38px;
+    }
+
+    div {
+      .empty-container {
+        display: flex;
+        width: 100%;
+        margin-top: 30px;
+        flex: 1;
+        padding: 80px;
+
+      }
+    }
+
+    .stats-container {
+      flex: 3;
+      padding-right: 20px;
+      justify-content: space-between;
+
+      .analytics-wrapper {
+        display: flex;
+        gap: 20px;
+        align-items: flex-start;
+      }
+
+      .chart-container {
+        padding: 20px 0px;
+        display: flex;
+        gap: 20px;
+
+        .line-chart {
+          padding: 10px 0px;
+          flex: 3;
+          height: 300px;
+        }
+
+        .percentage-chart {
+          flex: 2;
+          display: flex;
+          -webkit-box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+          -moz-box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding-top: 5px;
+
+          .progress-chart {
+            width: 130px;
+            height: 130px;
+          }
+
+          .progress-chart-footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-top: 10px;
+            width: 100%;
+
+            h2 {
+              font-size: 24px;
+              font-weight: 800;
+              padding: 0px;
+              margin: 0px;
+            }
+
+            .progress-bar-footer-stats {
+              display: flex;
+              width: 100%;
+              justify-content: space-between;
+
+              div {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 10px 0px;
+
+                h4 {
+                  padding: 0px;
+                  margin: 0px;
+                }
+
+                span {
+                  display: flex;
+                  justify-content: center;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .recent-activity-wrapper {
+      background-color: #fefefe;
+      padding: 20px;
+      flex: 1;
+
+      .recent-activity-container {
+        height: 75vh;
+        position: fixed;
+        overflow-y: scroll;
+
+        &::-webkit-scrollbar {
+          background-color: #fff;
+        }
+
+        &::-webkit-scrollbar-thumb {
+          border-radius: 20px;
+          //   background-color: #fff5f6;
+        }
+      }
+
+      h2 {
+        font-weight: 800;
+      }
+    }
+  }
+}

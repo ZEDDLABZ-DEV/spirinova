@@ -1,0 +1,44 @@
+.header {
+  display: flex;
+    background-color: white;
+    border-bottom: 1px solid #DEE1E3;
+    height: 72px;
+    
+    overflow: hidden;
+    .header-wrapper {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    padding: 0px 40px;
+    align-items: center;
+    .header-title {
+      flex: 1;
+      display: flex;
+      padding-top: 10px;
+      h3 {
+        font-weight: 500;
+        font-size: 16px;
+        
+        color: #011627
+      }
+    }
+
+    .header-toolbar {
+      flex: 1;
+      display: flex;
+      gap: 36px;
+      justify-content: flex-end;
+      padding-right: 80px;
+      align-items: center;
+      .header-toolbar-icon{
+        width: 20px;
+      }
+      .header-profile-toolbar {
+        img {
+          border-radius: 50%;
+          width: 34px;
+        }
+      }
+    }
+  }
+}
